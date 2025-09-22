@@ -12,7 +12,7 @@ const PostCard = ({ post }) => {
       <p className="text-gray-600 mt-2 line-clamp-3">
         {post.content}
       </p>
-      <p className="text-sm text-gray-500 mt-3">By {post.author}</p>
+      <p className="text-sm text-gray-500 mt-3">By {post.author?.username ||"unknown"}</p>
     </div>
   );
 };
